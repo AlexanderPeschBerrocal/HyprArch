@@ -11,12 +11,13 @@ Minimal // Lightweight // Aesthetic
 4.) Install hyprpaper  
 5.) Install hypridle  
 6.) Install hyprlock  
-7.) Install waybar  
+7.) Install waybar (pavucontrol, blueman)
 8.) Install wlogout  
 9.) Install kitty  
 10.) Install zsh  
 11.) Install oh-my-zsh  
 12.) Install dolphin  
+13.) Install firefox
 13.) Install code  
 14.) Install spotify  
 15.) Install discord  
@@ -27,7 +28,7 @@ main config: /etc/default/grub
 for windows 11 dual boot: /etc/grub.d/40_custom  
 for GRUB theme: /boot/grub/themes/retroboot/theme.txt  
   
-after configuration run:  
+after modification run:  
 sudo grub-mkconfig -o /boot/grub/grub.cfg  
 sudo grub-mkconfig -o /boot/EFI/arch/grub.cfg  
   
@@ -63,15 +64,15 @@ for kitty theme: ~/.config/kitty/theme.conf
 main config: ~/.zshrc  
   
 11.) oh-my-zsh  
-main config:  
   
 12.) dolphin  
   
-13.) code  
+13.) firefox  
   
-14.) spotify  
+14.) code  
+~/code-flags.conf  
   
-15.) discord  
+15.) spotify  
+~/spotify-flags.conf  
 
-
-
+16.) discord  
