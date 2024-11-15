@@ -11,13 +11,12 @@ Minimal // Lightweight // Aesthetic
 4.) Install hyprpaper  
 5.) Install hypridle  
 6.) Install hyprlock  
-7.) Install waybar (pavucontrol, blueman)
+7.) Install waybar (pavucontrol, blueman)  
 8.) Install wlogout  
 9.) Install kitty  
-10.) Install zsh  
-11.) Install oh-my-zsh  
-12.) Install dolphin  
-13.) Install firefox
+10.) Install zsh (oh-my-zsh)  
+11.) Install dolphin  
+12.) Install firefox  
 13.) Install code  
 14.) Install spotify  
 15.) Install discord  
@@ -63,16 +62,14 @@ for kitty theme: ~/.config/kitty/theme.conf
 10.) zsh  
 main config: ~/.zshrc  
   
-11.) oh-my-zsh  
+11.) dolphin  
   
-12.) dolphin  
+12.) firefox  
   
-13.) firefox  
-  
-14.) code  
+13.) code  
 ~/code-flags.conf  
   
-15.) spotify  
+14.) spotify  
 ~/spotify-flags.conf  
 
-16.) discord  
+15.) discord  
