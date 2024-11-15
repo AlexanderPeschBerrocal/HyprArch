@@ -1,0 +1,2 @@
+# HyprArch
+Minimal // Lightweight // Aesthetic
