@@ -1,5 +1,5 @@
 # HyprArch
-Minimal // Lightweight // Aesthetic
+Minimalistic // Lightweight // Aesthetic
 
 # Prerequisites
 1.) Minimal Arch Linux Installation
