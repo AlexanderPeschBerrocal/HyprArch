@@ -57,12 +57,8 @@
     "pulseaudio": {
         "interval": "once",
         "format": "<span font_family='JetBrainsMono Nerd Font'>{icon}</span>",
-        "format-bluetooth": "<span font_family='JetBrainsMono Nerd Font'>{icon}</span>",
         "format-muted": "<span font_family='JetBrainsMono Nerd Font'>\ueee8</span>",
-        "format-icons": {
-            "default": ["\uf026","\uf027","\uf028"]
-            //"headphone": "\uf025"
-        },
+        "format-icons": ["\uf026","\uf027","\uf028"],
         "tooltip": true,
         "tooltip-format": "Output volume: {volume}%",
         "scroll-step": 0,
@@ -85,7 +81,7 @@
         "tooltip": true,
         "tooltip-format": "Brightness: {percent}%",
         "scroll-step": 0,
-	    "device": "intel_backlight"
+	"device": "intel_backlight"
     },
     "network": {
         "interval": 60,
