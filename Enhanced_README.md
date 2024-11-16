@@ -2,7 +2,7 @@
 # HyprArch
 **Minimal // Lightweight // Aesthetic**  
 
-HyprArch is a carefully curated configuration setup for a minimal and aesthetically pleasing Arch Linux experience using Hyprland as the compositor. This repository provides step-by-step guidance for installation and customization to achieve a polished Wayland-based desktop environment.
+HyprArch is a carefully curated configuration setup for a minimal, lightweight and aesthetically pleasing Arch Linux experience using Hyprland as the compositor. This repository provides step-by-step guidance for installation and customization to achieve a polished Wayland-based desktop environment.
 
 ---
 
@@ -29,7 +29,7 @@ Follow the steps below to set up the required packages:
    - `hyprlock`: A Wayland-native screen locker.  
 
 5. **Install Waybar**  
-   A versatile status bar with optional modules for volume (pavucontrol) and Bluetooth (blueman).  
+   A versatile status bar with optional modules for volume (pavucontrol) and bluetooth (blueman).  
 
 6. **Install Utility Applications**  
    - `wlogout`: For managing logout and shutdown options.  
@@ -106,5 +106,3 @@ sudo grub-mkconfig -o /boot/EFI/arch/grub.cfg
   ```  
 
 ---
-
-This enhanced README ensures a smoother installation and offers additional clarity on customization options. Let me know if you'd like further refinements!
