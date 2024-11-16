@@ -73,3 +73,4 @@ main config: ~/.zshrc
 ~/spotify-flags.conf  
 
 15.) discord  
+--enable-features=UseOzonePlatform --ozone-platform-hint=wayland  
