@@ -1,5 +1,5 @@
 # HyprArch
-Minimalistic // Lightweight // Aesthetic
+This Arch Linux + Hyprland configuration is configured to be minimalistic, lightweight and aesthetic.
 
 # Prerequisites
 1.) Minimal Arch Linux Installation
@@ -7,7 +7,7 @@ Minimalistic // Lightweight // Aesthetic
 # Installation
 1.) Install GRUB  
 2.) Install SDDM  
-3.) Install hyprland  
+3.) Install hyprland  (grim, slurp)  
 4.) Install hyprpaper  
 5.) Install hypridle  
 6.) Install hyprlock  
