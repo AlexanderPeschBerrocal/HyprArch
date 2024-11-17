@@ -1,11 +1,10 @@
 # HyprArch
-This Arch Linux + Hyprland configuration is customized to be minimalistic, lightweight and aesthetic.
 
 ---
 
 ## Prerequisites
 **Minimal Arch Linux Installation** 
-- follow https://wiki.archlinux.org/title/Installation_guide
+- https://wiki.archlinux.org/title/Installation_guide
 
 ---
 
@@ -30,10 +29,10 @@ The following packages are required for the full setup:
 11. **dolphin** (file manager)
 12. **firefox** (browser)
 13. **code** (code editor)
-14. **spotify** (music)
+14. **spotify** (music streaming)
 15. **discord** (communication)
 
-Install these packages using your preferred method (e.g. `pacman` or `yay`)
+Install these packages using your preferred method (e.g. `pacman` or `yay`).
 
 ---
 
