@@ -3,15 +3,14 @@
 ---
 
 ## Prerequisites
-**Minimal Arch Linux Installation** 
-- https://wiki.archlinux.org/title/Installation_guide
+**Minimal Arch Linux Installation**
 
 ---
 
 ## Installation
 The following packages are required for the full setup:
 
-1. **GRUB** (bootloader)
+1. **GRUB** (boot loader)
 2. **SDDM** (display manager)
 3. **hyprland** (window manager)
    - **grim**: for screenshots
@@ -20,10 +19,10 @@ The following packages are required for the full setup:
 5. **hypridle** (idle management)
 6. **hyprlock** (lock screen)
 7. **waybar** (status bar)
-   - **pavucontrol**: audio management
-   - **blueman**: bluetooth management
+   - **pavucontrol**: for audio management
+   - **blueman**: for bluetooth management
 8. **wlogout** (logout menu)
-9. **kitty** (terminal)
+9. **kitty** (terminal emulator)
 10. **zsh** (shell)
     - **oh-my-zsh**: zsh framework
 11. **dolphin** (file manager)
@@ -93,3 +92,63 @@ sudo grub-mkconfig -o /boot/EFI/arch/grub.cfg
 
 ### 15. discord
 - **start flags**: `discord --enable-features=UseOzonePlatform --ozone-platform-hint=wayland`
+
+---
+
+## Links
+**Arch Linux**:
+- https://wiki.archlinux.org/title/Installation_guide
+
+**GRUB**:
+- https://www.gnu.org/software/grub/manual/grub/grub.html
+- https://wiki.archlinux.org/title/GRUB
+
+**SDDM**:
+- https://github.com/sddm/sddm
+- https://wiki.archlinux.org/title/SDDM
+
+**hyprland**:
+- https://wiki.hyprland.org
+- https://github.com/hyprwm/Hyprland
+- https://wiki.archlinux.org/title/Hyprland
+
+**grim**:
+- https://github.com/emersion/grim
+
+**slurp**:
+- https://github.com/emersion/slurp
+
+**hyprpaper**:
+- https://wiki.hyprland.org/Hypr-Ecosystem/hyprpaper
+
+**hypridle**:
+- https://wiki.hyprland.org/Hypr-Ecosystem/hypridle
+
+**hyprlock**:
+- https://wiki.hyprland.org/Hypr-Ecosystem/hyprlock
+
+**waybar**:
+- https://github.com/Alexays/Waybar
+
+**pavucontrol**:
+- https://wiki.archlinux.org/title/PulseAudio
+
+**blueman**:
+https://wiki.archlinux.org/title/Blueman
+
+**wlogout**
+- https://github.com/ArtsyMacaw/wlogout
+
+**kitty**
+- https://sw.kovidgoyal.net/kitty
+- https://github.com/kovidgoyal/kitty
+
+**zsh**
+- https://zsh.sourceforge.io/Doc/Release/zsh_toc.html
+- https://github.com/ohmyzsh/ohmyzsh
+- https://wiki.archlinux.org/title/Zsh
+
+**dolphin**
+- https://apps.kde.org/dolphin
+- https://github.com/KDE/dolphin
+- https://wiki.archlinux.org/title/Dolphin
