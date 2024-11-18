@@ -134,7 +134,7 @@ sudo grub-mkconfig -o /boot/EFI/arch/grub.cfg
 - https://wiki.archlinux.org/title/PulseAudio
 
 **blueman**:
-https://wiki.archlinux.org/title/Blueman
+- https://wiki.archlinux.org/title/Blueman
 
 **wlogout**
 - https://github.com/ArtsyMacaw/wlogout
