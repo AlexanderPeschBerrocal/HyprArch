@@ -1,6 +1,18 @@
-# HyprArch: A Arch Linux + Hyprland Setup
+# HyprArch: A Arch Linux + Hyprland Configuration
 
 HyprArch is a personalized configuration repository for setting up a lightweight, functional and visually appealing Arch Linux desktop environment using the Hyprland window manager.
+
+---
+
+## Showcase
+
+<details>
+  <summary>Click to view images</summary>
+
+  ![Image 1](screenshot_20241116_193604.png)
+  ![Image 2](screenshot_20241116_193803.png)
+
+</details>
 
 ---
 
