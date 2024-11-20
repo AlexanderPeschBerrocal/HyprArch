@@ -1,0 +1,138 @@
+{   
+    // Bar configuration
+    "layer": "top",
+    // "output": eDP-1,
+    "position": "top",
+    // "height": 30,
+    //"width": 1440,
+    "modules-left": [
+        "custom/l_end",
+        "hyprland/workspaces",
+        "custom/r_end",
+        "custom/l_end",
+        "hyprland/window",
+        "custom/r_end"
+    ],
+    "modules-center": [
+        "custom/l_end",
+        "clock",
+        "custom/r_end"
+    ],
+    "modules-right": [
+        "custom/l_end",
+        "backlight",
+	    "pulseaudio",
+        "pulseaudio#microphone",
+        "network",
+        "bluetooth",
+        "battery",
+        "custom/power",
+        "custom/r_end"
+    ],
+    // Module configuration
+    "hyprland/workspaces": {
+        "interval": "once",
+        "format": "{id}",
+        "persistent-workspaces": {
+            "*": 5
+        }
+    },
+    "hyprland/window": {
+        "interval": "once",
+        "format": "{initialTitle}",
+        "rewrite": {
+            "(.*)kitty": "Kitty \uf120 ",
+            "(.*)Dolphin": "Dolphin \uf07b ",
+            "(.*)Mozilla Firefox": "Firefox \uf269 ",
+            "(.*)Visual Studio Code": "VSCode \uf121 ",
+            "(.*)Spotify Free": "Spotify \uf1bc ",
+            "(.*)Discord": "Discord \uf392 ",
+            "(.*)Volume Control": "Pavucontrol \uf028 ",
+            "(.*)Bluetooth Devices": "Blueman \uf294 "
+        }
+    },
+    "clock": {
+        "interval": 60,
+        "format": "{:%H:%M}",
+        // "format-alt": "{:%d.%m.%y}",
+        "tooltip": true,
+        "tooltip-format": "{:%d.%m.%y}"
+    },
+    "backlight": {
+        "interval": "once",
+        "format": "<span font_family='JetBrainsMono Nerd Font'>{icon}</span>",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "tooltip": true,
+        "tooltip-format": "Brightness: {percent}%",
+        "scroll-step": 0,
+        "device": "intel_backlight"
+    },
+    "pulseaudio": {
+        "interval": "once",
+        "format": "<span font_family='JetBrainsMono Nerd Font'>{icon}</span>",
+        "format-muted": "<span font_family='JetBrainsMono Nerd Font'>\ueee8</span>", // \uf6a9
+        "format-icons": ["\uf026","\uf027","\uf028"],
+        "tooltip": true,
+        "tooltip-format": "Output volume: {volume}%",
+        "scroll-step": 0,
+        "on-click": "pavucontrol"
+    },
+    "pulseaudio#microphone": {
+        "interval": "once",
+        "format": "<span font_family='Font Awesome'>{format_source}</span>",
+        "format-source": "\uf130",
+        "format-source-muted": "\uf131",
+        "tooltip": true,
+        "tooltip-format": "Input volume: {source_volume}%",
+        "scroll-step": 0,
+        "on-click": "pavucontrol"
+    },
+    "network": {
+        "interval": 60,
+        "format-wifi": "<span font_family='JetBrainsMono Nerd Font'>\uf1eb</span>",
+        "format-ethernet": "<span font_family='JetBrainsMono Nerd Font'>\uf796</span>",
+        "format-disconnected": "<span font_family='JetBrainsMono Nerd Font'>\uf071</span>",
+        "tooltip": true,
+        "tooltip-format-wifi": "Network name: {essid} \nSignal strength: {signalStrength}%",
+        "tooltip-format-ethernet": "Connected",
+        "tooltip-format-disconnected": "Disconnected"
+    },
+    "bluetooth": {
+        "interval": "once",
+        "format-on": "<span font_family='Font Awesome'>\uf294</span>",
+        "format-off": "<span font_family='Font Awesome'>\uf294</span>",
+        "format-connected": "<span font_family='Font Awesome'>\uf294</span>",
+        "format-disabled": "<span font_family='Font Awesome'>\uf294</span>",
+        "tooltip": true,
+        "tooltip-format-on": "Bluetooth is turned on",
+        "tooltip-format-off": "Bluetooth is turned off",
+        "tooltip-format-connected": "Connected to {device_alias}",
+        "tooltip-format-disabled": "Bluetooth is disabled",
+        "on-click": "blueman-manager"
+    },
+    "battery": {
+        "interval": 60,
+        "format": "<span font_family='JetBrainsMono Nerd Font'>{icon}</span>",
+        "format-charging": "<span font_family='JetBrainsMono Nerd Font'>\uf0e7</span>",
+        "format-icons": ["\uf244","\uf243","\uf242","\uf241","\uf240"],
+        "tooltip": true,
+        "tooltip-format": "Capacity: {capacity}%",
+        "tooltip-format-charging": "Capacity: {capacity}%"
+    },
+    "custom/power": {
+        "interval": "once",
+        "format": "<span font_family='JetBrainsMono Nerd Font'>\uf011</span>",
+        "tooltip": false,
+        "on-click": "wlogout"
+    },
+    "custom/l_end": {
+        "interval": "once",
+        "format": " ",
+        "tooltip": false
+    },
+    "custom/r_end": {
+        "interval": "once",
+        "format": " ",
+        "tooltip": false
+    }
+}
