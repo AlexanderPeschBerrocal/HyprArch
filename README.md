@@ -9,8 +9,12 @@ HyprArch is a personalized configuration repository for setting up a lightweight
 <details>
   <summary>Click to view images</summary>
   
-  ![Image 1](screenshot_20241116_193604.png)
-  ![Image 2](screenshot_20241116_193803.png)
+  ![Image 1](Pictures/screenshots/screenshot_20241120_165335.png)
+  ![Image 2](Pictures/screenshots/screenshot_20241120_165354.png)
+  ![Image 3](Pictures/screenshots/screenshot_20241120_165507.png)
+  ![Image 4](Pictures/screenshots/screenshot_20241120_165522.png)
+  ![Image 5](Pictures/screenshots/screenshot_20241120_165557.png)
+  ![Image 6](Pictures/screenshots/screenshot_20241120_165601.png)
   
 </details>
 
