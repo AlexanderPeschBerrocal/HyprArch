@@ -8,10 +8,10 @@ HyprArch is a personalized configuration repository for setting up a lightweight
 
 <details>
   <summary>Click to view images</summary>
-
+  
   ![Image 1](screenshot_20241116_193604.png)
   ![Image 2](screenshot_20241116_193803.png)
-
+  
 </details>
 
 ---
@@ -19,7 +19,7 @@ HyprArch is a personalized configuration repository for setting up a lightweight
 ## Prerequisites
 Before proceeding, ensure you have:
 - A minimal Arch Linux installation
-- Basic knowledge of Linux
+- Basic knowledge of Arch Linux
 
 ---
 
@@ -69,6 +69,8 @@ Move the provided configuration files to their appropriate directories. Make sur
 
 Example:
 `sudo cp -r ~/HyprArch/configs/.config/hypr ~/.config/`
+
+### Step 4: (Optional) Make Changes
 
 #### 1. GRUB
 - **main configuration**: `/etc/default/grub`
