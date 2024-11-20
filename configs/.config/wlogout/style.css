@@ -1,0 +1,117 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+    text-shadow: none;
+    box-shadow: none;
+    border: none;
+    background-image: none;
+}
+
+window {
+    background-color: rgba(0,0,0,0);
+}
+
+button {
+    background-color: rgba(0,0,0,0.5);
+    color: rgba(255,255,255,1);
+    border-radius: 9px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10%;
+}
+
+button:hover {
+    background-color: rgba(255,255,255,0.5);
+    color: rgba(0,0,0,1);
+    background-size: 20%;
+}
+
+button:hover#lock {
+    margin: 0px 0px 0px 0px;
+    /*margin: 9px 0px 0px 9px;*/
+}
+
+button:hover#logout {
+    margin: 0px 0px 0px 0px;
+    /*margin: 0px 0px 9px 9px;*/
+}
+
+button:hover#suspend {
+    margin: 0px 0px 0px 0px;
+    /*margin: 9px 0px 0px 0px;*/
+}
+
+button:hover#hibernate {
+    margin: 0px 0px 0px 0px;
+    /*margin: 0px 0px 9px 0px;*/
+}
+
+button:hover#shutdown {
+    margin: 0px 0px 0px 0px;
+    /*margin: 9px 9px 0px 0px;*/
+}
+
+button:hover#reboot {
+    margin: 0px 0px 0px 0px;
+    /*margin: 0px 9px 9px 0px;*/
+}
+
+#lock {
+    background-image: image(url("icons/lock_white.png"));
+    border-radius: 9px 9px 0px 9px;
+    /*margin: 9px 0px 0px 9px;*/
+}
+
+#lock:hover {
+    background-image: image(url("icons/lock_black.png"));
+}
+
+#logout {
+    background-image: image(url("icons/logout_white.png"));
+    border-radius: 9px 0px 9px 9px;
+    /*margin: 0px 0px 9px 9px;*/
+}
+
+#logout:hover {
+    background-image: image(url("icons/logout_black.png"));
+}
+
+#suspend {
+    background-image: image(url("icons/suspend_white.png"));
+    border-radius: 9px 9px 0px 0px;
+    /*margin: 9px 0px 0px 0px;*/
+}
+
+#suspend:hover {
+    background-image: image(url("icons/suspend_black.png"));
+}
+
+#hibernate {
+    background-image: image(url("icons/hibernate_white.png"));
+    border-radius: 0px 0px 9px 9px;
+    /*margin: 0px 0px 9px 0px;*/
+}
+
+#hibernate:hover {
+    background-image: image(url("icons/hibernate_black.png"));
+}
+
+#shutdown {
+    background-image: image(url("icons/shutdown_white.png"));
+    border-radius: 9px 9px 9px 0px;
+    /*margin: 9px 9px 0px 0px;*/
+}
+
+#shutdown:hover {
+    background-image: image(url("icons/shutdown_black.png"));
+}
+
+#reboot {
+    background-image: image(url("icons/reboot_white.png"));
+    border-radius: 0px 9px 9px 9px;
+    /*margin: 0px 9px 9px 0px;*/
+}
+
+#reboot:hover {
+    background-image: image(url("icons/reboot_black.png"));
+}
