@@ -1,12 +1,37 @@
-# HyprArch: A Arch Linux + Hyprland Configuration
-
+# HyprArch
 HyprArch is a personalized configuration repository for setting up a lightweight, functional and visually appealing Arch Linux desktop environment using the Hyprland window manager.
 
 ---
 
-## Showcase
+## Features
+- **Custom Fonts**
+- **Custom Cursor Themes**
+- **GRUB**: Boot loader
+- **SDDM**: Display manager
+- **Hyprland**: Window manager
+- **Grim**: Screenshot tool
+- **Slurp**: Screen region selection for screenshots
+- **Hyprpaper**: Wallpaper manager
+- **Hypridle**: Idle manager
+- **Hyprlock**: Lock screen
+- **Waybar**: Statur bar
+- **Pavucontrol**: Audio management
+- **Blueman**: Bluetooth management
+- **Wlogout**: Logout menu
+- **Kitty**: Terminal emulator
+- **Zsh**: Shell
+- **Oh-My-Zsh**: Zsh framework
+- **Dolphin**: File manager
+- **Firefox**: Browser
+- **Code**: Code editor
+- **Spotify**: Music streaming
+- **Discord**: Communication
 
+---
+
+## Showcase
 <details>
+  
   <summary>Click to view images</summary>
   
   ![Image 1](Pictures/screenshots/screenshot_20241120_165335.png)
@@ -20,8 +45,13 @@ HyprArch is a personalized configuration repository for setting up a lightweight
 
 ---
 
+## Disclamer
+All important links and resources can be found at the bottom of this page.
+
+---
+
 ## Prerequisites
-Before proceeding, ensure you have:
+Before proceeding with the installation, make sure you have:
 - A minimal Arch Linux installation
 - Basic knowledge of Arch Linux
 
@@ -30,51 +60,43 @@ Before proceeding, ensure you have:
 ## Installation
 
 ### Step 1: Install Required Packages
-Use `pacman` or your preferred AUR helper like `yay` to install the following packages:
+You will need the following packages. Use `pacman` for official packages and an AUR helper like `yay` for AUR packages.
 
-1. **grub** (boot loader)
-2. **sddm** (display manager)
-3. **hyprland** (window manager)
-   - **grim**: for screenshots
-   - **slurp**: for screen region selection
-4. **hyprpaper** (wallpaper management)
-5. **hypridle** (idle management)
-6. **hyprlock** (lock screen)
-7. **waybar** (status bar)
-   - **pavucontrol**: for audio
-   - **blueman**: for bluetooth
-8. **wlogout** (logout menu)
-9. **kitty** (terminal emulator)
-10. **zsh** (shell)
-    - **oh-my-zsh**: zsh framework
-11. **dolphin** (file manager)
-12. **firefox** (browser)
-13. **code** (code editor)
-14. **spotify** (music streaming)
-15. **discord** (communication)
-
-Install these packages using:
 ```
-sudo pacman -S [package_names]
-# or use an AUR helper like yay
-yay -S [aur_package_names]
+sudo pacman -S ttf-jetbrains-mono-nerd ttf-font-awesome grub sddm hyprland grim slurp hyprpaper hypridle hyprlock waybar pavucontrol blueman kitty zsh dolphin firefox code discord git
 ```
 
-### Step 2: Clone The Repository
-Clone this repository to your home directory using:
 ```
-sudo pacman -S git
+yay -S bibata-cursor-theme-bin wlogout oh-my-zsh spotify  
+```
+
+### Step 2: Configure Installed Packages
+Set SDDM as your display manager:
+```
+sudo systemctl enable sddm
+```
+
+Switch your shell to zsh:
+```
+chsh -s $(which zsh)
+```
+
+### Step 3: Clone The Repository
+Clone this repository to your home directory:
+```
 cd ~
 git clone https://github.com/AlexanderPeschBerrocal/HyprArch.git
 ```
 
-### Step 3: Move And Replace Configuration Files
+### Step 4: Apply Configuration Files
 Move the provided configuration files to their appropriate directories. Make sure to replace already existing configuration files if necessary.
 
 Example:
-`sudo cp -r ~/HyprArch/configs/.config/hypr ~/.config/`
+```
+sudo cp -r ~/HyprArch/configs/.config/hypr ~/.config/
+```
 
-### Step 4: (Optional) Make Changes
+### Step 5: (Optional) Make Changes
 
 #### 1. GRUB
 - **main configuration**: `/etc/default/grub`
@@ -133,9 +155,17 @@ sudo grub-mkconfig -o /boot/EFI/arch/grub.cfg
 
 ---
 
-## Links
+## Links And Resources
+
 **Arch Linux**:
 - https://wiki.archlinux.org/title/Installation_guide
+
+**Fonts**
+- https://www.nerdfonts.com
+- https://fontawesome.com
+
+**Cursor Themes**
+- https://github.com/ful1e5/Bibata_Cursor
 
 **GRUB**:
 - https://www.gnu.org/software/grub/manual/grub/grub.html
@@ -144,6 +174,7 @@ sudo grub-mkconfig -o /boot/EFI/arch/grub.cfg
 **SDDM**:
 - https://github.com/sddm/sddm
 - https://wiki.archlinux.org/title/SDDM
+- https://github.com/Kangie/sddm-sugar-candy
 
 **hyprland**:
 - https://wiki.hyprland.org
@@ -180,6 +211,7 @@ sudo grub-mkconfig -o /boot/EFI/arch/grub.cfg
 **kitty**
 - https://sw.kovidgoyal.net/kitty
 - https://github.com/kovidgoyal/kitty
+- https://github.com/catppuccin/catppuccin
 
 **zsh**
 - https://zsh.sourceforge.io/Doc/Release/zsh_toc.html
