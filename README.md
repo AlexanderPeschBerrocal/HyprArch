@@ -4,8 +4,8 @@ HyprArch is a personalized configuration repository for setting up a lightweight
 ---
 
 ## Features
-- **Custom Fonts**: Includes JetBrainsMono Nerd Font and Font Awesome for an elegant look.  
-- **Custom Cursor Themes**: Offers the Bibata Cursor theme for a modern appearance.  
+- **Fonts**: Includes JetBrainsMono Nerd Font and Font Awesome for an elegant look.  
+- **Cursor Themes**: Includes the Bibata Cursor Themes for a modern appearance.  
 - **GRUB**: Manages booting into your OS.  
 - **SDDM**: A sleek display manager for login sessions.  
 - **Hyprland**: A dynamic tiling Wayland compositor for powerful window management.  
