@@ -4,28 +4,26 @@ HyprArch is a personalized configuration repository for setting up a lightweight
 ---
 
 ## Features
-- **Custom Fonts**
-- **Custom Cursor Themes**
-- **GRUB**: Boot loader
-- **SDDM**: Display manager
-- **Hyprland**: Window manager
-- **Grim**: Screenshot tool
-- **Slurp**: Screen region selection for screenshots
-- **Hyprpaper**: Wallpaper manager
-- **Hypridle**: Idle manager
-- **Hyprlock**: Lock screen
-- **Waybar**: Statur bar
-- **Pavucontrol**: Audio management
-- **Blueman**: Bluetooth management
-- **Wlogout**: Logout menu
-- **Kitty**: Terminal emulator
-- **Zsh**: Shell
-- **Oh-My-Zsh**: Zsh framework
-- **Dolphin**: File manager
-- **Firefox**: Browser
-- **Code**: Code editor
-- **Spotify**: Music streaming
-- **Discord**: Communication
+- **Custom Fonts**: Includes JetBrainsMono Nerd Font and Font Awesome for an elegant look.  
+- **Custom Cursor Themes**: Offers the Bibata Cursor theme for a modern appearance.  
+- **GRUB**: Manages booting into your OS.  
+- **SDDM**: A sleek display manager for login sessions.  
+- **Hyprland**: A dynamic tiling Wayland compositor for powerful window management.  
+- **Grim** and **Slurp**: Tools for taking and customizing screenshots.  
+- **Hyprpaper**: Wallpaper manager to enhance your desktop aesthetics.  
+- **Hypridle**: Idle manager for handling power-saving behaviors.  
+- **Hyprlock**: Lockscreen application to secure your session.  
+- **Waybar**: A feature-rich status bar for Wayland environments.  
+- **Pavucontrol**: Audio management utility.  
+- **Blueman**: Bluetooth management tool.  
+- **Wlogout**: Provides a customizable logout menu.  
+- **Kitty**: Fast and feature-rich terminal emulator.  
+- **Zsh** and **Oh-My-Zsh**: Shell setup for a better terminal experience.  
+- **Dolphin**: KDE file manager for seamless navigation.  
+- **Firefox**: Browser for internet access.  
+- **Code**: A powerful code editor.  
+- **Spotify**: For music streaming.  
+- **Discord**: For communication.  
 
 ---
 
@@ -45,8 +43,8 @@ HyprArch is a personalized configuration repository for setting up a lightweight
 
 ---
 
-## Disclamer
-All important links and resources can be found at the bottom of this page.
+## Disclaimer
+This repository is intended for personal use and may require additional tweaks to fit your specific setup. All important links and resources can be found at the bottom of this page.
 
 ---
 
@@ -62,10 +60,12 @@ Before proceeding with the installation, make sure you have:
 ### Step 1: Install Required Packages
 You will need the following packages. Use `pacman` for official packages and an AUR helper like `yay` for AUR packages.
 
+#### Official packages
 ```
 sudo pacman -S ttf-jetbrains-mono-nerd ttf-font-awesome grub sddm hyprland grim slurp hyprpaper hypridle hyprlock waybar pavucontrol blueman kitty zsh dolphin firefox code discord git
 ```
 
+#### AUR packages
 ```
 yay -S bibata-cursor-theme-bin wlogout oh-my-zsh spotify  
 ```
@@ -88,70 +88,30 @@ cd ~
 git clone https://github.com/AlexanderPeschBerrocal/HyprArch.git
 ```
 
-### Step 4: Apply Configuration Files
-Move the provided configuration files to their appropriate directories. Make sure to replace already existing configuration files if necessary.
+### Step 4: Apply Configuration Files  
+Move the provided configuration files to their respective directories. Replace existing files if necessary. Use the following table as a reference for where to place each configuration file:
 
-Example:
+| Component          | Configuration File(s)                           | Destination Path(s)                                   |
+|--------------------|-------------------------------------------------|-------------------------------------------------------|
+| **GRUB**           | `grub`, `40_custom`, `retroboot`                | `/etc/default/`, `/etc/grub.d/`, `/boot/grub/themes/` |
+| **SDDM**           | `default.conf`, `sugar-candy`                   | `/etc/sddm.conf.d/`, `usr/share/sddm/thems/`          |
+| **Hyprland**       | `hyprland.conf`                                 | `~/.config/hypr/`                                     |
+| **Hyprpaper**      | `hyprpaper.conf`                                | `~/.config/hypr/`                                     |
+| **Hypridle**       | `hypridle.conf`                                 | `~/.config/hypr/`                                     |
+| **Hyprlock**       | `hyprlock.conf`                                 | `~/.config/hypr/`                                     |
+| **Waybar**         | `config.jsonc`, `style.css`                     | `~/.config/waybar/`                                   |
+| **Wlogout**        | `layout`, `style.css`                           | `~/.config/wlogout/`                                  |
+| **Kitty**          | `kitty.conf`, `theme.conf`                      | `~/.config/kitty/`                                    |
+| **Zsh**            | `.zshrc`                                        | `~/`                                                  |
+| **Code**           | `code-flags.conf`                               | `~/`                                                  |
+| **Spotify**        | `spotify-flags.conf`                            | `~/`                                                  |
+
+Example command to copy Hypr configurations:  
 ```
 sudo cp -r ~/HyprArch/configs/.config/hypr ~/.config/
 ```
 
 ### Step 5: (Optional) Make Changes
-
-#### 1. GRUB
-- **main configuration**: `/etc/default/grub`
-- **windows 11 dual boot settings**: `/etc/grub.d/40_custom`
-- **GRUB theme**: `/boot/grub/themes/retroboot`
-
-After modifying GRUB configurations, update GRUB with:
-```
-sudo grub-mkconfig -o /boot/grub/grub.cfg
-sudo grub-mkconfig -o /boot/EFI/arch/grub.cfg
-```
-
-#### 2. SDDM
-- **main configuration**: `/etc/sddm.conf.d/default.conf`
-- **SDDM theme**: `/usr/share/sddm/themes/sugar-candy`
-
-#### 3. hyprland
-- **main configuration**: `~/.config/hypr/hyprland.conf`
-
-#### 4. hyprpaper
-- **main configuration**: `~/.config/hypr/hyprpaper.conf`
-
-#### 5. hypridle
-- **main configuration**: `~/.config/hypr/hypridle.conf`
-
-#### 6. hyprlock
-- **main configuration**: `~/.config/hypr/hyprlock.conf`
-
-#### 7. waybar
-- **main configuration**: `~/.config/waybar/config.jsonc`
-- **styling configuration**: `~/.config/waybar/style.css`
-
-#### 8. wlogout
-- **main configuration**: `~/.config/wlogout/layout`
-- **styling configuration**: `~/.config/wlogout/style.css`
-
-#### 9. kitty
-- **main configuration**: `~/.config/kitty/kitty.conf`
-- **kitty theme**: `~/.config/kitty/theme.conf`
-
-#### 10. zsh
-- **main configuration**: `~/.zshrc`
-
-#### 11. dolphin
-
-#### 12. firefox
-
-#### 13. code
-- **start flags**: `~/code-flags.conf`
-
-#### 14. spotify
-- **start flags**: `~/spotify-flags.conf`
-
-#### 15. discord
-- **start flags**: `discord --enable-features=UseOzonePlatform --ozone-platform-hint=wayland`
 
 ---
 
