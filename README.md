@@ -6,7 +6,7 @@ HyprArch is a personalized configuration repository for setting up a lightweight
 ## Features
 - **Fonts**: Includes JetBrainsMono Nerd Font and Font Awesome for an elegant look.  
 - **Cursor Themes**: Includes the Bibata Cursor Themes for a modern appearance.  
-- **GRUB**: Manages booting into your OS.  
+- **GRUB**: Minimal boot loader.  
 - **SDDM**: A sleek display manager for login sessions.  
 - **Hyprland**: A dynamic tiling Wayland compositor for powerful window management.  
 - **Grim** and **Slurp**: Tools for taking and customizing screenshots.  
@@ -94,7 +94,7 @@ Move the provided configuration files to their respective directories. Replace e
 | Component          | Configuration File(s)                           | Destination Path(s)                                   |
 |--------------------|-------------------------------------------------|-------------------------------------------------------|
 | **GRUB**           | `grub`, `40_custom`, `retroboot`                | `/etc/default/`, `/etc/grub.d/`, `/boot/grub/themes/` |
-| **SDDM**           | `default.conf`, `sugar-candy`                   | `/etc/sddm.conf.d/`, `usr/share/sddm/thems/`          |
+| **SDDM**           | `default.conf`, `sugar-candy`                   | `/etc/sddm.conf.d/`, `usr/share/sddm/themes/`         |
 | **Hyprland**       | `hyprland.conf`                                 | `~/.config/hypr/`                                     |
 | **Hyprpaper**      | `hyprpaper.conf`                                | `~/.config/hypr/`                                     |
 | **Hypridle**       | `hypridle.conf`                                 | `~/.config/hypr/`                                     |
@@ -103,8 +103,8 @@ Move the provided configuration files to their respective directories. Replace e
 | **Wlogout**        | `layout`, `style.css`                           | `~/.config/wlogout/`                                  |
 | **Kitty**          | `kitty.conf`, `theme.conf`                      | `~/.config/kitty/`                                    |
 | **Zsh**            | `.zshrc`                                        | `~/`                                                  |
-| **Code**           | `code-flags.conf`                               | `~/`                                                  |
-| **Spotify**        | `spotify-flags.conf`                            | `~/`                                                  |
+| **Code**           | `code-flags.conf`                               | `~/.config/`                                          |
+| **Spotify**        | `spotify-flags.conf`                            | `~/.config/`                                          |
 
 Example command to copy Hypr configurations:  
 ```
