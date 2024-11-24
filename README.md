@@ -137,13 +137,15 @@ sudo grub-mkconfig -o /boot/EFI/arch/grub.cfg
 
 **Arch Linux**:
 - https://wiki.archlinux.org/title/Installation_guide
+- https://archlinux.org/download
+- https://rufus.ie/en
 
 **yay**:
 - https://github.com/Jguer/yay
 
 **Fonts**
-- https://www.nerdfonts.com
-- https://fontawesome.com
+- https://archlinux.org/packages/extra/any/ttf-jetbrains-mono-nerd
+- https://archlinux.org/packages/extra/any/ttf-font-awesome
 
 **Cursor Themes**
 - https://github.com/ful1e5/Bibata_Cursor
