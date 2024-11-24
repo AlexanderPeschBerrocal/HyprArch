@@ -4,26 +4,26 @@ HyprArch is a personalized configuration repository for setting up a lightweight
 ---
 
 ## Features
-- **Fonts**: Includes JetBrainsMono Nerd Font and Font Awesome for an elegant look.  
-- **Cursor Themes**: Includes the Bibata Cursor Themes for a modern appearance.  
-- **GRUB**: Minimal boot loader.  
-- **SDDM**: A sleek display manager for login sessions.  
-- **Hyprland**: A dynamic tiling Wayland compositor for powerful window management.  
-- **Grim** and **Slurp**: Tools for taking and customizing screenshots.  
-- **Hyprpaper**: Wallpaper manager to enhance your desktop aesthetics.  
-- **Hypridle**: Idle manager for handling power-saving behaviors.  
-- **Hyprlock**: Lockscreen application to secure your session.  
-- **Waybar**: A feature-rich status bar for Wayland environments.  
-- **Pavucontrol**: Audio management utility.  
-- **Blueman**: Bluetooth management tool.  
-- **Wlogout**: Provides a customizable logout menu.  
-- **Kitty**: Fast and feature-rich terminal emulator.  
-- **Zsh** and **Oh-My-Zsh**: Shell setup for a better terminal experience.  
-- **Dolphin**: KDE file manager for seamless navigation.  
-- **Firefox**: Browser for internet access.  
-- **Code**: A powerful code editor.  
-- **Spotify**: For music streaming.  
-- **Discord**: For communication.  
+- **Fonts**: JetBrainsMono Nerd Font and Font Awesome
+- **Cursor Themes**: Bibata Cursor Themes
+- **GRUB**: Boot loader
+- **SDDM**: Display manager
+- **Hyprland**: Window manager
+- **Grim** and **Slurp**: Tools for taking screenshots
+- **Hyprpaper**: Wallpaper manager
+- **Hypridle**: Idle manager
+- **Hyprlock**: Lockscreen
+- **Waybar**: Status bar
+- **Pavucontrol**: Audio management utility
+- **Blueman**: Bluetooth management tool
+- **Wlogout**: Logout menu
+- **Kitty**: Terminal emulator
+- **Zsh** and **Oh-My-Zsh**: Shell setup
+- **Dolphin**: File manager
+- **Firefox**: Browser
+- **Code**: Code editor
+- **Spotify**: Music
+- **Discord**: Communication
 
 ---
 
@@ -62,12 +62,21 @@ You will need the following packages. Use `pacman` for official packages and an 
 
 #### Official packages
 ```
-sudo pacman -S ttf-jetbrains-mono-nerd ttf-font-awesome grub sddm hyprland grim slurp hyprpaper hypridle hyprlock waybar pavucontrol blueman kitty zsh dolphin firefox code discord git
+sudo pacman -S ttf-jetbrains-mono-nerd ttf-font-awesome grub sddm hyprland grim slurp hyprpaper hypridle hyprlock waybar pavucontrol blueman kitty zsh dolphin firefox code discord git base-devel
 ```
 
 #### AUR packages
 ```
 yay -S bibata-cursor-theme-bin wlogout oh-my-zsh spotify  
+```
+
+#### Yay installation
+If you don't have `yay` installed, you can set it up with:
+```
+cd ~
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 ```
 
 ### Step 2: Configure Installed Packages
@@ -111,7 +120,16 @@ Example command to copy Hypr configurations:
 sudo cp -r ~/HyprArch/configs/.config/hypr ~/.config/
 ```
 
+Run the following command after setting up the GRUB configs:
+```
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo grub-mkconfig -o /boot/EFI/arch/grub.cfg
+```
+
 ### Step 5: (Optional) Make Changes
+- Set screen resolution
+- Set kayboard layout
+- ...
 
 ---
 
@@ -119,6 +137,9 @@ sudo cp -r ~/HyprArch/configs/.config/hypr ~/.config/
 
 **Arch Linux**:
 - https://wiki.archlinux.org/title/Installation_guide
+
+**yay**:
+- https://github.com/Jguer/yay
 
 **Fonts**
 - https://www.nerdfonts.com
@@ -130,6 +151,7 @@ sudo cp -r ~/HyprArch/configs/.config/hypr ~/.config/
 **GRUB**:
 - https://www.gnu.org/software/grub/manual/grub/grub.html
 - https://wiki.archlinux.org/title/GRUB
+- https://github.com/vinceliuice/Elegant-grub2-themes
 
 **SDDM**:
 - https://github.com/sddm/sddm
