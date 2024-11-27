@@ -14,7 +14,7 @@ sudo pacman -S --noconfirm \
     ttf-jetbrains-mono-nerd ttf-font-awesome grub sddm \
     qt5_graphicaleffects qt5_quickcontrols2 qt5_svg hyprland grim slurp \
     hyprpaper hypridle hyprlock waybar pavucontrol blueman kitty zsh \
-    zsh-syntax-highlighting dolphin firefox code discord git base-devel \
+    dolphin firefox code discord git base-devel \
     nano neofetch
 
 # Step 3: Install yay (AUR Helper)
@@ -68,8 +68,8 @@ echo "Copying GRUB files..."
 sudo cp $CONFIG_REPO/configs/GRUB/grub /etc/default/
 sudo cp -r $CONFIG_REPO/configs/GRUB/Elegant-wave-blur-left-dark /boot/grub/themes/
 sudo grub-mkconfig -o /boot/grub/grub.cfg
-sudo mkdir /boot/EFI/arch
-sudo grub-mkconfig -o /boot/EFI/arch/grub.cfg
+#sudo mkdir /boot/EFI/arch
+#sudo grub-mkconfig -o /boot/EFI/arch/grub.cfg
 
 # Configure SDDM
 echo "Copying SDDM files..."
