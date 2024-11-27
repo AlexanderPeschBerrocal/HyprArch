@@ -12,7 +12,7 @@ sudo pacman -Syu --noconfirm
 echo "Installing official packages..."
 sudo pacman -S --noconfirm \
     ttf-jetbrains-mono-nerd ttf-font-awesome grub sddm \
-    qt5_graphicaleffects qt5_quickcontrols2 qt5_svg hyprland grim slurp \
+    qt5-graphicaleffects qt5-quickcontrols2 qt5-svg hyprland grim slurp \
     hyprpaper hypridle hyprlock waybar pavucontrol blueman kitty zsh \
     dolphin firefox code discord git base-devel \
     nano neofetch
