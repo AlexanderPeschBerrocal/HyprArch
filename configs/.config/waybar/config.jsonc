@@ -79,7 +79,7 @@
     },
     "pulseaudio#microphone": {
         "interval": "once",
-        "format": "<span font_family='Font Awesome'>{format_source}</span>",
+        "format": "<span font_family='Font Awesome 6 Free'>{format_source}</span>",
         "format-source": "\uf130",
         "format-source-muted": "\uf131",
         "tooltip": true,
