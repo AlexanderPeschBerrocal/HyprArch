@@ -95,7 +95,7 @@
 
 #network.ethernet {
     padding-left: 6px; /*0*/
-    padding-right: 6px; /*0*/
+    padding-right: 11px; /*5*/
 }
 
 #network.disconnected {
