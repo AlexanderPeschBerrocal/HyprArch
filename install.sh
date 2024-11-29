@@ -60,6 +60,12 @@ chsh -s $(which zsh)
 CONFIG_REPO=~/HyprArch
 echo "Applying configuration files from $CONFIG_REPO..."
 
+# Ensure target directories exist before copying
+sudo mkdir -p ~/.config
+sudo mkdir -p /etc/sddm.conf.d
+sudo mkdir -p ~/.oh-my-zsh/custom/themes
+sudo mkdir -p ~/.oh-my-zsh/custom/plugins
+
 # Configure Pictures
 ech "Copying Pictures files..."
 cp -r $CONFIG_REPO/Pictures ~/
