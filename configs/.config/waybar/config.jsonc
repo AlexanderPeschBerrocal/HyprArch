@@ -21,7 +21,7 @@
     "modules-right": [
         "custom/l_end",
         "backlight",
-	    "pulseaudio",
+	"pulseaudio",
         "pulseaudio#microphone",
         "network",
         "bluetooth",
@@ -41,21 +41,21 @@
         "interval": "once",
         "format": "{initialTitle}",
         "rewrite": {
-            "(.*)kitty": "Kitty \uf120 ",
-            "(.*)Dolphin": "Dolphin \uf07b ",
-            "(.*)Mozilla Firefox": "Firefox \uf269 ",
-            "(.*)Visual Studio Code": "VSCode \uf121 ",
-            "(.*)Spotify Free": "Spotify \uf1bc ",
-            "(.*)Discord": "Discord \uf392 ",
-            "(.*)Volume Control": "Pavucontrol \uf028 ",
-            "(.*)Bluetooth Devices": "Blueman \uf294 "
+            "(.*)kitty": "Kitty", // \uf120
+            "(.*)Dolphin": "Dolphin", // \uf07b
+            "(.*)Mozilla Firefox": "Firefox", // \uf269
+            "(.*)Visual Studio Code": "VSCode", // \uf121
+            "(.*)Spotify Free": "Spotify", // \uf1bc
+            "(.*)Discord": "Discord", // uf1ff
+            "(.*)Volume Control": "Pavucontrol", // \uf028
+            "(.*)Bluetooth Devices": "Blueman" // \uf294
         }
     },
     "clock": {
         "interval": 60,
         "format": "{:%H:%M}",
         // "format-alt": "{:%d.%m.%y}",
-        "tooltip": true,
+        "tooltip": false,
         "tooltip-format": "{:%d.%m.%y}"
     },
     "backlight": {
@@ -99,10 +99,10 @@
     },
     "bluetooth": {
         "interval": "once",
-        "format-on": "<span font_family='Font Awesome'>\uf294</span>",
-        "format-off": "<span font_family='Font Awesome'>\uf294</span>",
-        "format-connected": "<span font_family='Font Awesome'>\uf294</span>",
-        "format-disabled": "<span font_family='Font Awesome'>\uf294</span>",
+        "format-on": "<span font_family='JetBrainsMono Nerd Font'>\uf294</span>",
+        "format-off": "<span font_family='JetBrainsMono Nerd Font'>\uf294</span>",
+        "format-connected": "<span font_family='JetBrainsMono Nerd Font'>\uf294</span>",
+        "format-disabled": "<span font_family='JetBrainsMono Nerd Font'>\uf294</span>",
         "tooltip": true,
         "tooltip-format-on": "Bluetooth is turned on",
         "tooltip-format-off": "Bluetooth is turned off",
