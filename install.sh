@@ -67,7 +67,7 @@ sudo mkdir -p ~/.oh-my-zsh/custom/themes
 sudo mkdir -p ~/.oh-my-zsh/custom/plugins
 
 # Configure Pictures
-ech "Copying Pictures files..."
+echo "Copying Pictures files..."
 cp -r $CONFIG_REPO/Pictures ~/
 
 # Configure .config
