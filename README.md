@@ -43,12 +43,10 @@ This repository is intended for personal use and may require additional tweaks t
   
   <summary>Click to view Showcase</summary>
   
-  ![Image 1](Pictures/screenshots/screenshot_20241120_165335.png)
-  ![Image 2](Pictures/screenshots/screenshot_20241120_165354.png)
-  ![Image 3](Pictures/screenshots/screenshot_20241120_165507.png)
-  ![Image 4](Pictures/screenshots/screenshot_20241120_165522.png)
-  ![Image 5](Pictures/screenshots/screenshot_20241120_165557.png)
-  ![Image 6](Pictures/screenshots/screenshot_20241120_165601.png)
+  ![Image 1](Pictures/screenshots/screenshot_20241129_141158.png)
+  ![Image 2](Pictures/screenshots/screenshot_20241129_141340.png)
+  ![Image 3](Pictures/screenshots/screenshot_20241129_141900.png)
+  ![Image 4](Pictures/screenshots/screenshot_20241129_141926.png)
   
 </details>
 
@@ -79,9 +77,6 @@ cd ..
 - https://wiki.archlinux.org/title/Installation_guide
 - https://archlinux.org/download
 - https://rufus.ie/en
-
-**yay**:
-- https://github.com/Jguer/yay
 
 **Fonts**
 - https://archlinux.org/packages/extra/any/ttf-jetbrains-mono-nerd
