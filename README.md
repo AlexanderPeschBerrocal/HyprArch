@@ -65,7 +65,6 @@ cd ~
 git clone https://github.com/AlexanderPeschBerrocal/HyprArch.git
 cd HyprArch
 chmod +x install.sh
-cd ..
 ./install.sh
 ```
 
