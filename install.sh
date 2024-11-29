@@ -88,8 +88,8 @@ sudo cp -r $CONFIG_REPO/configs/SDDM/sugar-candy /usr/share/sddm/themes/
 # Configure ZSH
 echo "Copying zsh files..."
 sudo cp $CONFIG_REPO/configs/ZSH/.zshrc ~/
-sudo cp $CONFIG_REPO/configs/ZSH/.oh-my-zsh/custom/themes/ ~/.oh-my-zsh/custom/themes/
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+sudo cp -r $CONFIG_REPO/configs/ZSH/.oh-my-zsh/custom/themes/ ~/.oh-my-zsh/custom/themes/
+sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 # Reminder for manual adjustments
 echo "Manual configuration may still be needed for screen resolution, keyboard layout, etc."
