@@ -16,7 +16,7 @@ sudo pacman -S --noconfirm \
     brightnessctl bluez bluez-utils blueman grim slurp \
     hyprpaper hypridle hyprlock waybar pulseaudio pavucontrol \
     kitty zsh dolphin firefox code discord git base-devel \
-    gtk3 qt5ct qt6ct 
+    gtk3 qt5ct qt5-wayland qt6ct qt6-wayland dunst xdg-desktop-portal-hyprland
 
 # Step 3: Install yay (AUR Helper)
 echo "Installing yay if not already installed..."
