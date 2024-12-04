@@ -15,8 +15,8 @@ This repository is intended for personal use and may require additional tweaks t
 
   - **Fonts**: JetBrainsMono Nerd Font and Font Awesome
   - **Cursor Themes**: Bibata Cursor Themes
-  - **GRUB**: Boot loader
-  - **SDDM**: Display manager
+  - **GRUB**: Boot loader + Theme
+  - **SDDM**: Display manager + Theme
   - **Hyprland**: Window manager
   - **Grim** and **Slurp**: Sceenshot tools
   - **Hyprpaper**: Wallpaper manager
@@ -26,7 +26,7 @@ This repository is intended for personal use and may require additional tweaks t
   - **Pavucontrol**: Audio management tool
   - **Blueman**: Bluetooth management tool
   - **Wlogout**: Logout menu
-  - **Kitty**: Terminal emulator
+  - **Kitty**: Terminal emulator + Theme
   - **Zsh** and **Oh-My-Zsh**: Shell setup
   - **Dolphin**: File manager
   - **Firefox**: Browser
