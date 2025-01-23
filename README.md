@@ -23,7 +23,7 @@ This repository is intended for personal use and may require additional tweaks t
 ---
 
 ## Prerequisites
-Before proceeding with the installation, make sure you have a minimal Arch Linux installation.
+Before proceeding with the installation, make sure you have a minimal arch linux installation.
 
 ---
 
