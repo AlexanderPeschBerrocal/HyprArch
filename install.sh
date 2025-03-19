@@ -11,10 +11,15 @@ sudo pacman -Syu --noconfirm
 # Step 2: Install Official Packages
 echo "Installing official packages..."
 sudo pacman -S --noconfirm \
-    neofetch ttf-jetbrains-mono-nerd ttf-font-awesome grub hyprland \
+    neofetch \
+    ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-font-awesome \
+    grub hyprland \
     sddm qt5-graphicaleffects qt5-quickcontrols2 qt5-svg \
-    brightnessctl bluez bluez-utils blueman grim slurp \
-    hyprpaper hypridle hyprlock waybar pulseaudio pavucontrol \
+    brightnessctl \
+    bluez bluez-utils blueman \
+    grim slurp \
+    hyprpaper hypridle hyprlock waybar \
+    pulseaudio pavucontrol \
     kitty zsh dolphin firefox code discord git base-devel \
     gtk3 qt5ct qt5-wayland qt6ct qt6-wayland dunst xdg-desktop-portal-hyprland
 
